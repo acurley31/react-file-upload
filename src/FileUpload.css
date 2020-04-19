@@ -1,0 +1,109 @@
+:root {
+    --primary: #1e88e5;
+    --primary-light: #bbdefb;
+    --primary-dark: #005cb2;
+    --on-primary: #000000;
+    --on-primary-light: #000000;
+    --on-primary-dark: #ffffff;
+    --warn: #ba000d;
+}
+
+.file-upload-container {
+    width: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 48px;
+}
+
+.file-upload-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-upload-footer {
+    margin-top: 16px;
+}
+
+.file-upload-title {
+    margin: 0;
+}
+
+.file-upload-button {
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-upload-button:focus {
+    outline: none;
+}
+
+.file-upload-button:hover {
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border-color: var(--primary-dark);
+}
+
+.file-upload-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.file-upload-list-empty {
+    margin-top: 16px;
+    padding: 32px 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    text-align: center;
+}
+
+.file-upload-list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.file-upload-list-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-upload-list-item-filename {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.file-upload-list-item-size {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.file-upload-list-item-delete-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.file-upload-list-item-delete-button:hover {
+    color: var(--warn);
+}
+
+.file-upload-list-item-delete-button:focus {
+    outline: none;
+}
